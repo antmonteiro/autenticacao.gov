@@ -30,8 +30,6 @@
         $result = PyBytes_FromStringAndSize( (const char *)$1, arg1->Size());
    }
 
-#elif SWIGPERL
-    %module Pteid
 #elif SWIGPHP
     %module pteid
 #elif SWIGJAVASCRIPT
@@ -89,8 +87,6 @@
 %interface_custom("PTEID_SigningDeviceProxy", "PTEID_SigningDevice", eIDMW::PTEID_SigningDevice)
 
 #elif SWIGPYTHON
-
-#elif SWIGPERL
 
 #elif SWIGPHP
 
@@ -1750,8 +1746,6 @@ void SetEventCallback_WrapperCpp(long lRet, unsigned long ulState, void *pvRef)
 %ignore eIDMW::PTEID_Config::DeleteKeysByPrefix();
 
 #elif SWIGPYTHON
-
-#elif SWIGPERL
 
 #elif SWIGPHP
 
